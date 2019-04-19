@@ -28,9 +28,9 @@ Text goes here
 
 ## Vary the tools but not the Environment
 
-<img align="left"  src="./randomForest.png" width="200">
+<img align="left"  src="./images/randomForest.png" width="200">
 Text goes here
-<img align="right"  src="./mapr.png" width="200">
+<img align="right"  src="./images/mapr.png" width="200">
 <br clear="right"/>
 <br clear="left"/>
 
