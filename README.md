@@ -1,25 +1,34 @@
 # ML Variations on MapR - Random Forest (RF)
+<p>
+<img align="left"  src="./growing.gif" width="200">
+
 Multiple implementations of training an RF, demonstrating the versatility of the MapR platform for ML
+
+</p>
 
 ## Why Random Forest?
 
-![Tree2](./growing.gif) { width=50% }
+<p>
 
-<img src="./growing.gif" width="200">
-
-
+<img align="right"  src="./forest.gif" width="200">
 
 
+</p>
 
 
 ## The Machine-Learning Workflow with RF
+<p>
 
-![Tree3](./forest.gif)
+<img align="left"  src="./tree.gif" width="200">
+
+</p>
 
 
 
 ## Vary the tools but not the Environment
 
+<p>
 
-![Tree1](./tree.gif)
+<img align="right"  src="./mapr.png" width="200">
+</p>
 
