@@ -1,10 +1,10 @@
 # ML Variations on MapR - Random Forest (RF)
-<p>
+<div>
 <img align="left"  src="./growing.gif" width="200">
 
 Multiple implementations of training an RF, demonstrating the versatility of the MapR platform for ML
 
-</p>
+</div>
 
 ## Why Random Forest?
 
@@ -28,7 +28,7 @@ Multiple implementations of training an RF, demonstrating the versatility of the
 ## Vary the tools but not the Environment
 
 <p>
-
+<img align="right"  src="./randomForest.png" width="200">
 <img align="right"  src="./mapr.png" width="200">
 </p>
 
