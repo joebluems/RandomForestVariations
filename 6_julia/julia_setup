@@ -1,0 +1,15 @@
+https://www.analyticsvidhya.com/blog/2017/10/comprehensive-tutorial-learn-data-science-julia-from-scratch/
+
+
+using Pkg
+Pkg.add("IJulia")
+Pkg.add("DataFrames")
+Pkg.add("Plots") 
+Pkg.add("StatsPlots") 
+Pkg.add("PyPlot")
+Pkg.add("ScikitLearn")
+
+using IJulia
+notebook()
+
+ctrl-d to quit
