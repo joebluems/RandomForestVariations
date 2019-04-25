@@ -27,7 +27,7 @@ object Main extends App {
 
   //load data , create pipeline , generate train/test
   val df = spark.read.option("header", "true").
-     option("inferSchema", "true").csv("../sample10k.csv")
+     option("inferSchema", "true").csv(sampleFile)
   println("\nSample of Input Data...")
   df.show()
 
