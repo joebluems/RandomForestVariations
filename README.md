@@ -9,13 +9,13 @@ If you have a data platform on which you can wield many tools and the flexibilit
 
 ## Why Random Forest?
 <img align="right"  src="./images/forest.gif" width="250">
-There are many categories of machine-learning problems and the goal of the solution you're trying to build will determine which algorithms are appropriate. Classification is part of the O.G. family of ML problems  (along with estimation / forecasting and clustering) but there are many others. If you're an experienced data scientist, you've probably built a few binary classification models in your day. 
+There are many categories of machine-learning problems and the goal of the solution you're trying to build will determine which algorithms are appropriate. Classification is part of the O.G. family of ML problems  (along with estimation / forecasting and clustering) but there are many others. If you're an experienced data scientist, you've probably built a few binary classification models in your day. <br/>
 <br/>
 The **Random Forest** algorithm takes a very simple component (i.e. the binary decision tree) and extends it very powerfully by building many trees (ahem, a forest...) and constantly sampling among the observations and features. This allows the data scientist to explore non-linear patterns in the data but also provides the robustness of linear estimators. It's unique in that the more you train, *the less chance that over-fitting has occurred*. You should use lots of methods to run lots of experiements to find the model (or the ensemble) with the best performance.
-
 <br clear="right"/>
-An example of one forest tree is here: 
-<img src="./images/sampleTree.png" width="600">
+<br/>
+An example of one forest tree is here - we're going to build hundreds, thousands of these: 
+<img src="./images/sampleTree.png" width="750">
 
 
 ## The Machine-Learning Workflow with RF
