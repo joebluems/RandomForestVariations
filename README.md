@@ -33,11 +33,11 @@ Here are the steps we'll perform on each of these variations. If the tool allows
 4. **Evaluate the model** on our holdout set with the AUC (Area-under-the-ROC) 
 
 ## Vary the tools but not the Environment
-<img align="left"  src="./images/randomForest.png" width="200">
+<img align="left"  src="./images/randomForest.png" width="250">
 
-Your choice of ML tools shouldn't be the first thing you decide. *It should be one of the last*. Focus on the delivery of your solution, then pick the right workflow that will best achieve that delivery, thus giving you the best chance to deliver the value. Isn't that what you get paid for? The variations on Random Forest included with this content should give you some ideas about when each method is appropriate. <br/>
+Your choice of ML tools shouldn't be the first thing you decide. *It should be one of the last*. Focus on the delivery of your solution, then pick the right workflow that will best achieve that delivery, thus giving you the best chance to provide the value. Isn't that what you get paid for? <br/>
 <br/>
-Click on the links in the repo to read more about each one. All of the code is meant to run on a **MapR 6.1 Platform** - I've provided the versions of all the tools I've used and any extra libraries that need to be added, usually done with one or two commands. 
+The variations on Random Forest included with this content should give you some ideas about when each method is appropriate. Click on the links in the repo to read more about each one. All of the code is meant to run on a **MapR 6.1 Platform** - I've provided the versions of all the tools I've used and any extra libraries that need to be added, usually done with one or two commands. 
 <br clear="left"/>
 Here's how to get the code quickly onto your MapR cluster: <br/>
 
