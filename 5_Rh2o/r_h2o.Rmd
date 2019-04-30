@@ -10,7 +10,7 @@ localH2O = h2o.init(ip = "localhost", port = 54321, startH2O = TRUE)
 ```
 ```{r}
 library(data.table)
-sampleDT = fread("/Users/joeblue/randomforest/sample10k.csv")
+sampleDT = fread("../sample10k.csv")
 sampleDT$label = factor(sampleDT$target)
 head(sampleDT)
 

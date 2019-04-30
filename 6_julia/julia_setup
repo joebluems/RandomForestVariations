@@ -9,6 +9,7 @@ Pkg.add("StatsPlots")
 Pkg.add("PyPlot")
 Pkg.add("ScikitLearn")
 
+
 using IJulia
 notebook()
 
