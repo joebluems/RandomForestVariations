@@ -4,7 +4,7 @@
 
 *If a decision tree fails in a random forest and no one is monitoring it, does it impact performance?*  The data scientist today has an embarrassment of riches for machine-learning libraries. It would be a classic buyer's market if most of these tools weren't already open-sourced. Selecting the right tool to get good performance used to be the key decision a data scientist would struggle with - we're seeing a seismic shift to focusing on how it gets deployed. After all, that is the **only** way in which the value of a machine-learning model is realized. <br/>
 <br/>
-If you have a data platform on which you can wield many tools and the flexibility to deploy your models the way you want to, the actual choice of tool can almost be incidental. To show that concept in action, we've loaded many libraries and tools onto **the MapR data platform** to illustrate how the same model training can be done in a variety of ways, depending on things like size, speed and user preference.
+If you have a data platform on which you can wield many tools and the flexibility to deploy your models the way you want to, the actual choice of tool can almost be incidental. To show that concept in action, we've loaded many libraries and tools onto **the MapR Data Platform** to illustrate how the same model training can be done in a variety of ways, depending on things like size, speed and user preference.
 <br clear="left"/>
 
 ## Why Random Forest?
@@ -25,7 +25,7 @@ The purpose of performing the same model-training with multiple tools is to demo
 The results of these exercises will not be usable since we're using synthesized data. But don't start slashing and burning right away. You can determine which tools are right for you based on your environment and deliverables and replace your own data. In each section, there are tips about which situations that each tool is ideal for and some next steps (i.e. deployment). 
 <br clear="left"/>
 <br/>
-Here are the steps we'll perform on each of these variations. If the tool allows for visualization, we'll explore that too: 
+Here are the steps we'll perform on each of these variations. If the tool allows for visualization, we'll explore that too: <br/>
 1. Read in CSV file containing label and numeric features, split 60/40
 1. Train RF model on training set with 500 trees and max-depth of each tree=5
 1. Interpret the Model's findings with Feature Importance
