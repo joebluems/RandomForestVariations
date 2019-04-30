@@ -11,7 +11,7 @@
 ### THE SET-UP
 There are two options for training the random forest presented here with Spark: pyspark with jupyter and submitting as a scala application. You could also use the spark-shell or another notebook. You could also invoke SparkR and run R code. 
 #### pyspark
-To run the pyspark notebook, you'll need jupyter and a few libraries. You'll also need to set your SPARK_HOME environment variable so python knows where to find it. Once that's ready, launch the notebook.
+To run the pyspark notebook, you'll need jupyter and a few libraries (have an admin install with pip or sudo it yourself). You'll also need to set your SPARK_HOME environment variable so python knows where to find it. Once that's ready, launch the notebook.
 ```
 export SPARK_HOME=/opt/mapr/spark/spark-2.3.2/
 echo $SPARK_HOME
@@ -20,7 +20,7 @@ python
 Python 3.6.3 (default, Mar 20 2018, 13:50:41) 
 [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)] on linux
 Type "help", "copyright", "credits" or "license" for more information.
->>> import findspark
+>>> import findspark, sklearn, matplotib, numpy, itertools
 >>> ctrl-d
 jupyter notebook
 ```
@@ -38,8 +38,34 @@ sbt package
 If your code worked, it should create a jar in the local folder **./target/scala-2.11/** which we will need to run the code in the next step.
 
 ### THE RUN
-
+The two implementations appear very different but are similar under the hood. Both are using Spark's ML Pipelines. 
 #### pyspark
+Running the notebook is as simple as pressing play and watching. There are a few things you might need to change:
+1. Change the location of the csv to '/user/mapr/**<user>**/RandomForestVariations/sample10k.csv'
+1. You might need to replay a cell if the figure isn't showing up  
+
+Once you get it running, you might see some output like this:
+```
++---------------+-----+--------------------+
+|             id|label|            features|
++---------------+-----+--------------------+
+|523T0KGIWNKIJ9P|  1.0|[-4.5667211344624...|
+|A7GO61NB4SVQVMW|  0.0|[-1.6045449181362...|
+...
++---------------+-----+--------------------+
+
+Col 	 Relative Importance
+f1 	 0.08361246769651286
+...
+f12 	 0.07742582169768518
+```
+
+As well as a lackluster ROC and confounding confusion matrix:
+<p align="middle">
+  <img src="../images/docker.png" width="150" /> 
+  <img src="../images/flask-logo.png" width="150" />
+</p>
+<br clear="middle"/>
 
 #### scala 
 After you've built the application, you can submit the job. The basic usage is below:
@@ -68,3 +94,10 @@ AUC for Random Forest (test set) ...
 Don't expect much performance if you use the synthetic data. An AUC of 0.5 = ML equivalent of a coin flip. 
 
 ### THE WRAP-UP
+
+
+<p align="middle">
+  <img src="../images/docker.png" width="150" /> 
+  <img src="../images/flask-logo.png" width="150" />
+  <img src="../images/kubernetes.png" width="150" />
+</p>
