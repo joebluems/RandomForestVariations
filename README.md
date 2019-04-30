@@ -26,10 +26,10 @@ The results of these exercises will not be usable since we're using synthesized 
 <br clear="left"/>
 <br/>
 Here are the steps we'll perform on each of these variations. If the tool allows for visualization, we'll explore that too: <br/>
-1. Read in CSV file containing label and numeric features, split 60/40
-1. Train RF model on training set with 500 trees and max-depth of each tree=5
-1. Interpret the Model's findings with Feature Importance
-1. Evaluate the model on our holdout set with the AUC (Area-under-the-ROC) 
+* Read in CSV file containing label and numeric features, split 60/40
+* Train RF model on training set with 500 trees and max-depth of each tree=5
+* Interpret the Model's findings with Feature Importance
+* Evaluate the model on our holdout set with the AUC (Area-under-the-ROC) 
 
 
 ## Vary the tools but not the Environment
