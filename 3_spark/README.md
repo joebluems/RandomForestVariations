@@ -4,7 +4,7 @@
 <br clear="left"/>
 
 ### THE SCOOP
-<img align="right" src="../images/jupyter.png" width="150">
+<img align="right" src="../images/jupyter.png" width="100">
 
 <br clear="right"/>
 
@@ -60,10 +60,10 @@ f1 	 0.08361246769651286
 f12 	 0.07742582169768518
 ```
 
-As well as a lackluster ROC and confounding confusion matrix:
+Images produced may resemble this lackluster ROC and confounding confusion matrix:
 <p align="middle">
-  <img src="../images/docker.png" width="150" /> 
-  <img src="../images/flask-logo.png" width="150" />
+  <img src="../images/roc.png" width="350" /> 
+  <img src="../images/confusion.png" width="350" />
 </p>
 <br clear="middle"/>
 
@@ -97,7 +97,6 @@ Don't expect much performance if you use the synthetic data. An AUC of 0.5 = ML 
 
 
 <p align="middle">
-  <img src="../images/docker.png" width="150" /> 
-  <img src="../images/flask-logo.png" width="150" />
-  <img src="../images/kubernetes.png" width="150" />
+  <img src="../images/spark-streaming.png" width="250" /> 
 </p>
+<br clear="middle"/>
