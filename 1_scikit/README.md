@@ -5,7 +5,7 @@ The python library **scikit-learn** is a dependable collection of tools that are
 <br clear="left"/>
 
 ### THE SCOOP
-A model built with **scikit-learn is lightweight and portable**. This makes it a good candidate for being *deployed via API in a docker container*. If your scoring job is extrememly large or feature extraction is complex, this model alone won't help you, but you can achieve scaling with a tool like Kubernetes orchestrating those containers. On the training side, it's a good choice for a quick-and-dirty model that gives you a good baseline without custom coding. You can always paste the code into a notebook if command-line interfaces aren't your thing. 
+A model built with **scikit-learn is lightweight and portable**. This makes it a good candidate for being *deployed via API in a docker container*. If your scoring job is extrememly large or feature extraction is complex, this model alone won't help you, but you can achieve scaling with a tool like Kubernetes orchestrating those containers. On the training side, it's a **good choice for a quick-and-dirty model that gives you a good baseline without custom coding**. Why should you re-write the steps to calculate AUC when it's already done for you? You can always paste the code into a notebook if command-line interfaces aren't your thing. 
 <br/>
 
 ### THE SET-UP
@@ -55,7 +55,7 @@ AUC for Testing Data:
 ```
 <br/>
 
-Additionally, there is a file created called **rfmodel.joblib** that is written using joblib. This model can be used for deployment.
+Don't expect much performance if you use the synthetic data. An AUC of 0.5 = ML equivalent of a coin flip. Additionally, there is a file created called **rfmodel.joblib** that is written using joblib. This model can be used for deployment.
 
 ### THE WRAP-UP
 
