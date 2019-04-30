@@ -9,7 +9,7 @@
 <br clear="right"/>
 
 ### THE SET-UP
-There are two options for training the random forest with Spark: pyspark with jupyter and submitting as a scala application.
+There are two options for training the random forest presented here with Spark: pyspark with jupyter and submitting as a scala application. You could also use the spark-shell or another notebook. You could also invoke SparkR and run R code. 
 #### pyspark
 To run the pyspark notebook, you'll need jupyter and a few libraries. You'll also need to set your SPARK_HOME environment variable so python knows where to find it. Once that's ready, launch the notebook.
 ```
@@ -38,11 +38,33 @@ sbt package
 If your code worked, it should create a jar in the local folder **./target/scala-2.11/** which we will need to run the code in the next step.
 
 ### THE RUN
+
 #### pyspark
 
 #### scala 
-After you've build the application
+After you've built the application, you can submit the job. The basic usage is below:
+```
+spark-submit --class <package>.Main  <path_to_jar_file> <path_to_input_file>
+```
+Here is how to run it and some of the expected output...
+```
+head -1 src/main/scala/RandomForest.scala 
+package com.mapr.randomforest 
+ls ./target/scala-2.11/*.jar
+./target/scala-2.11/randomforest_2.11-0.1.0-SNAPSHOT.jar
+/opt/mapr/spark/spark-2.3.2/bin/spark-submit --class com.mapr.randomforest.Main ./target/scala-2.11/randomforest_2.11-0.1.0-SNAPSHOT.jar /user/<user>/RandomForestVariations/sample10k.csv
+Sample of Input Data...
+...
 
-Don't expect much performance if you use the synthetic data. An AUC of 0.5 = ML equivalent of a coin flip. Additionally, there is a file created called **rfmodel.joblib** that is written using joblib. This model can be used for deployment.
+Feature Importance for Random Forest...
+(f1,0.07720917704516188)
+(f2,0.08586758745064019)
+...
+
+AUC for Random Forest (test set) ...
+0.49880152464352806
+```
+
+Don't expect much performance if you use the synthetic data. An AUC of 0.5 = ML equivalent of a coin flip. 
 
 ### THE WRAP-UP
