@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import roc_auc_score
+from joblib import dump, load
 
 #### method to split the data ###
 def split_dataset(dataset, train_percentage, feature_headers, target_header):
@@ -34,6 +35,9 @@ def main():
   rf = random_forest_classifier(train_x, train_y, 500, 5)
   print("\nTrained model :: ")
   print(rf)
+  # write model to file
+  dump(rf, 'rfmodel.joblib') 
+  
 
   print("\nFeature Importances: ")
   for i in range(0,len(features)):
