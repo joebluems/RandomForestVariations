@@ -21,24 +21,24 @@ An example of one forest tree is here - we're going to build hundreds, thousands
 ## The Machine-Learning Workflow with RF
 <img align="left"  src="./images/tree.gif" width="250">
 
-The purpose of performing the same model-training with multiple tools is to demonstrate that there is sufficient variability of the MapR platform to support all these tools. *Once the choice of tools is no longer constrained, you start thinking about overcoming the limits surrounding deployment of the models you're building.* <br/>
+The purpose of performing the same model-training with multiple tools is to demonstrate that there is sufficient variability of the MapR platform to support all these tools. **Once the choice of tools is no longer constrained, you start thinking about overcoming the limits surrounding deployment of the models you're building.** <br/>
 <br/>
-The results of these exercises will not be usable since we're using synthesized data. But don't start slashing and burning right away. You can determine which tools are right for you based on your environment and deliverables and replace your own data. In each section, there are tips about which situations that each tool is ideal for and some next steps (i.e. deployment). 
+The results of these exercises will not be usable since we're using synthesized data. But don't start slashing and burning right away. *You can determine which tools are right for you based on your environment and deliverables and replace your own data*. In each section, there are tips about which situations that each tool is ideal for and some next steps (i.e. deployment). 
 <br clear="left"/>
 <br/>
 Here are the steps we'll perform on each of these variations. If the tool allows for visualization, we'll explore that too: <br/>
-* Read in CSV file containing label and numeric features, split 60/40
-* Train RF model on training set with 500 trees and max-depth of each tree=5
-* Interpret the Model's findings with Feature Importance
-* Evaluate the model on our holdout set with the AUC (Area-under-the-ROC) 
+1. **Read in CSV** file containing label and numeric features, split 60/40
+2. **Train RF model** on training set with 500 trees and max-depth of each tree=5
+3. **Interpret the Model** with Feature Importance
+4. **Evaluate the model** on our holdout set with the AUC (Area-under-the-ROC) 
 
 ## Vary the tools but not the Environment
 <img align="left"  src="./images/randomForest.png" width="200">
 
-Your choice of ML tools shouldn't be the first thing you decide. *It should be one of the last*. Focus on the delivery of your solution, then pick the right workflow that will best achieve that delivery, thus giving you the best chance to deliver the value. Isn't that what you get paid for? The variations on Random Forest included with this content should give you some ideas about when each method is appropriate. Click on the links above to read more about each one. All of the code is meant to run on a **MapR 6.1 Platform** - I've provided the versions of all the tools I've used and any extra libraries that need to be added, usually done with one or two commands. <img align="right"  src="./images/mapr.png" width="200">
-
+Your choice of ML tools shouldn't be the first thing you decide. *It should be one of the last*. Focus on the delivery of your solution, then pick the right workflow that will best achieve that delivery, thus giving you the best chance to deliver the value. Isn't that what you get paid for? The variations on Random Forest included with this content should give you some ideas about when each method is appropriate. <br/>
+<br/>
+Click on the links in the repo to read more about each one. All of the code is meant to run on a **MapR 6.1 Platform** - I've provided the versions of all the tools I've used and any extra libraries that need to be added, usually done with one or two commands. 
 <br clear="left"/>
-<br clear="right"/>
 Here's how to get the code quickly onto your MapR cluster: <br/>
 
 ```
