@@ -35,10 +35,17 @@ Here are the steps we'll perform on each of these variations. If the tool allows
 ## Vary the tools but not the Environment
 
 <img align="left"  src="./images/randomForest.png" width="200">
-Text goes here
+Your choice of ML tools shouldn't be the first thing you decide. *It should be one of the last*. Focus on the delivery of your solution, then pick the right workflow that will best achieve that delivery, thus giving you the best chance to deliver the value. Isn't that what you get paid for? The variations on Random Forest included with this content should give you some ideas about when each method is appropriate. Click on the links above to read more about each one. All of the code is meant to run on a **MapR 6.1 Platform** - I've provided the versions of all the tools I've used and any extra libraries that need to be added, usually done with one or two commands. 
 <img align="right"  src="./images/mapr.png" width="200">
+
 <br clear="right"/>
 <br clear="left"/>
+Here's how to get the code quickly onto your MapR cluster: <br/>
+```
+cd /user/<user>
+git clone https://github.com/joebluems/RandomForestVariations.git
+cd RandomForestVariations
+```
 <br/>
 PS - made it through the whole post without resorting to using the metaphor "seeing the forest for the trees..."!
 
