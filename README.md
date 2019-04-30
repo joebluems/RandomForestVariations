@@ -1,6 +1,6 @@
 # ML Variations on MapR - Random Forest (RF)
 
-<img align="left"  src="./growing.gif" width="250">
+<img align="left"  src="./images/growing.gif" width="250">
 
 *If a decision tree fails in a random forest and no one is monitoring it, does it impact performance?*  The data scientist today has an embarrassment of riches for machine-learning libraries. It would be a classic buyer's market if most of these tools weren't already open-sourced. Selecting the right tool to get good performance used to be the key decision a data scientist would struggle with - we're seeing a seismic shift to focusing on how it gets deployed. After all, that is the **only** way in which the value of a machine-learning model is realized. <br/>
 <br/>
@@ -11,7 +11,7 @@ If you have a data platform on which you can wield many tools and the flexibilit
 ## Why Random Forest?
 
 
-<img align="right"  src="./forest.gif" width="250">
+<img align="right"  src="./images/forest.gif" width="250">
 Text goes here
 
 <br clear="right"/>
@@ -20,7 +20,7 @@ Text goes here
 
 ## The Machine-Learning Workflow with RF
 
-<img align="left"  src="./tree.gif" width="200">
+<img align="left"  src="./images/tree.gif" width="200">
 Text goes here
 
 <br clear="left"/>
