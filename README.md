@@ -19,13 +19,17 @@ An example of one forest tree is here - we're going to build hundreds, thousands
 
 
 ## The Machine-Learning Workflow with RF
-
 <img align="left"  src="./images/tree.gif" width="200">
-Text goes here
-
+The purpose of performing the same model-training with multiple tools is to demonstrate that there is sufficient variability of the MapR platform to support all these tools. *Once the choice of tools is no longer constrained, you start thinking about overcoming the limits surrounding deployment of the models you're building.* <br/>
+<br/>
+The results of these exercises will not be usable since we're using synthesized data. But don't start slashing and burning right away. You can determine which tools are right for you based on your environment and deliverables and replace your own data. In each section, there are tips about which situations that each tool is ideal for and some next steps (i.e. deployment). 
 <br clear="left"/>
-
-
+<br/>
+Here are the steps we'll perform on each of these variations. If the tool allows for visualization, we'll explore that too: 
+1. Read in CSV file containing label and numeric features, split 60/40
+1. Train RF model on training set with 500 trees and max-depth of each tree=5
+1. Interpret the Model's findings with Feature Importance
+1. Evaluate the model on our holdout set with the AUC (Area-under-the-ROC) 
 
 
 ## Vary the tools but not the Environment
