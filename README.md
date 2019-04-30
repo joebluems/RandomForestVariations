@@ -35,4 +35,6 @@ Text goes here
 <img align="right"  src="./images/mapr.png" width="200">
 <br clear="right"/>
 <br clear="left"/>
+<br/>
+PS - made it through the whole post without resorting to using the metaphor "seeing the forest for the trees..."!
 
