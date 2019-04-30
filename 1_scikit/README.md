@@ -62,13 +62,13 @@ Don't expect much performance if you use the synthetic data. An AUC of 0.5 = ML 
 ### THE WRAP-UP
 
 There are three basic flavors of deploying the model you just wrote out to the MapR file system:
-1. For small to medium batches, simply run it as a script, possibly scheduled with crontab.
-1. For real-time scenarios, download the mapr_streams_python library and add the model to your consumer
-1. For meeting serious SLA's and heavy workloads, put the model into a lightweight container, serve it with an API such as Flask, then orchestrate with Kubernetes to meet demands of the workload.
+1. For small to medium batches, simply **run it as a python script, possibly scheduled with crontab**.
+1. For real-time scenarios, download the **mapr_streams_python library, stream your features through a Producer, and then add the model in your Consumer**
+1. For meeting serious SLA's and heavy workloads, put the model into a **lightweight container, serve it with an API such as Flask, then orchestrate with Kubernetes** to meet demands of the workload.
 
-<p float="center">
-  <img src="../images/docker.png" width="100" /> 
-  <img src="../images/flask-logo.png" width="100" />
-  <img src="../images/docker.png" width="100" />
+<p align="middle">
+  <img src="../images/docker.png" width="150" /> 
+  <img src="../images/flask-logo.png" width="150" />
+  <img src="../images/kubernetes.png" width="150" />
 </p>
 
