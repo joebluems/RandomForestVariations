@@ -23,7 +23,7 @@ An example of one forest tree is here - we're going to build hundreds, thousands
 
 The purpose of performing the same model-training with multiple tools is to demonstrate that there is sufficient variability of the MapR platform to support all these tools. **Once the choice of tools is no longer constrained, you start thinking about overcoming the limits surrounding deployment of the models you're building.** <br/>
 <br/>
-The results of these exercises will not be usable since we're using synthesized data. But don't start slashing and burning right away. *You can determine which tools are right for you based on your environment and deliverables and replace your own data*. In each section, there are tips about which situations that each tool is ideal for and some next steps (i.e. deployment). 
+The results of these exercises will not be usable since we're using synthesized data. But don't call a lumberjack or start slashing and burning right away. *You can determine which tools are right for you based on your environment and deliverables and replace your own data*. In each section, there are tips about which situations that each tool is ideal for and some next steps (i.e. deployment). 
 <br clear="left"/>
 <br/>
 Here are the steps we'll perform on each of these variations. If the tool allows for visualization, we'll explore that too: <br/>
