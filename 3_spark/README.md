@@ -41,7 +41,7 @@ If your code worked, it should create a jar in the local folder **./target/scala
 The two implementations appear very different but are similar under the hood. Both are using Spark's ML Pipelines. 
 #### pyspark
 Running the notebook is as simple as pressing play and watching. There are a few things you might need to change:
-1. Change the location of the csv to '/user/mapr/**<user>**/RandomForestVariations/sample10k.csv'
+1. Change the location of the csv to '/user/mapr/**user**/RandomForestVariations/sample10k.csv'
 1. You might need to replay a cell if the figure isn't showing up  
 
 Once you get it running, you might see some output like this:
@@ -72,7 +72,7 @@ After you've built the application, you can submit the job. The basic usage is b
 ```
 spark-submit --class <package>.Main  <path_to_jar_file> <path_to_input_file>
 ```
-Here is how to run it and some of the expected output...
+Here is how to run it and some of the expected output; for the input file, make sure you change the user folder to your own...
 ```
 head -1 src/main/scala/RandomForest.scala 
 package com.mapr.randomforest 
