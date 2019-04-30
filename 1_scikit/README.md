@@ -1,7 +1,7 @@
 ## Random Forest with sklearn
 <img align="left" src="../images/scikit.png" width="150">
 
-The python library **scikit-learn** is a dependable collection of tools that are among the easiest and most user-friendly packages there are. It's built on numpy and scipy, so if you are comfortable with python, this will be one of your first stops. For those who are newer to machine-learning, there's a good chance that you learned how to build models with this package.
+The python library **scikit-learn** is a dependable collection of tools that are among the easiest and most user-friendly packages there are. It's built on numpy and scipy, so if you are comfortable with python, this will be one of your first stops. For those who are newer to machine-learning, there's a good chance that you learned how to build models with this package. This is also a really good choice to estimate the degree to which your problem can be solved or quick feature assessments. 
 <br clear="left"/>
 
 ### THE SCOOP
@@ -11,7 +11,9 @@ A model built with **scikit-learn is lightweight and portable**. This makes it a
 ### THE SET-UP
 <img align="right" src="../images/pandas-logo.png" width="200">
 
-Setup for this example is minimal. We use the pandas library which makes the data manipulation much easier and further reduces code. Below is a quick test to show if you have the right libraries. If python complains, use pip install <library>, or have your cluster admin do(or sudo) it for you.
+Setup for this example is minimal. We use the pandas library which makes the data manipulation much easier and further reduces code. Below is a quick test to show if you have the right libraries. If python complains, use pip install <library>, or have your cluster admin do(or sudo) it for you. <br/>
+<br/>
+Isn't MapR a distributed file system? And don't you need special commands to interact with distributed file systems? It is but you don't, because MapR's file system is POSIX-compliant. You can run any program that work on Linux without modification!   
 <br clear="right"/>
 
 ```
@@ -59,5 +61,14 @@ Don't expect much performance if you use the synthetic data. An AUC of 0.5 = ML 
 
 ### THE WRAP-UP
 
-<img src="../images/flask-logo.png" width="150">
-<img src="../images/docker.png" width="150">
+There are three basic flavors of deploying the model you just wrote out to the MapR file system:
+1. For small to medium batches, simply run it as a script, possibly scheduled with crontab.
+1. For real-time scenarios, download the mapr_streams_python library and add the model to your consumer
+1. For meeting serious SLA's and heavy workloads, put the model into a lightweight container, serve it with an API such as Flask, then orchestrate with Kubernetes to meet demands of the workload.
+
+<p float="center">
+  <img src="../images/docker.png" width="100" /> 
+  <img src="../images/flask-logo.png" width="100" />
+  <img src="../images/docker.png" width="100" />
+</p>
+
