@@ -7,7 +7,7 @@ Another key selling point of Spark is the included libraries, including **Spark 
 <br clear="left"/>
 
 ### THE SCOOP
-<img align="right" src="../images/jupyter.png" width="100">
+<img align="right" src="../images/jupyter.png" width="200">
 
 A model developed with **Spark's ML Pipelines** is very portable within Spark workflows and that makes it the ideal choice for big-data modeling jobs, as well as a model that integrates readily into Spark Streaming workflows for real-time implementations. Spark is a good choice **when the training data is exceptionally large** (i.e. 100M's of rows) or the **features being extracted are especially onerous** (e.g. vectorizing text from 1M documents and vocab size of 2M+). These are the types of problems where other methods may fail and cause limitations to be imposed on the data scientist. <br/>
 <br/>
@@ -97,12 +97,16 @@ AUC for Random Forest (test set) ...
 0.49880152464352806
 ```
 
-Don't expect much performance if you use the synthetic data. An AUC of 0.5 = ML equivalent of a coin flip. 
+Don't expect much performance if you use the synthetic data. An AUC of 0.5 = ML equivalent of a coin flip. In either scenario, the model can be written to the file system in a few different ways. Saving it as a Spark object is the preferred method, especially if you know this is going to be spark of a spark job down the line.
 
 ### THE WRAP-UP
+A Spark model doesn't make a lot of sense unless you're running a workload on a distributed file system, such as the **MapR platform**. There is considerable overhead and for small batches or simple models, elapsed time may be much longer for Spark. The complexity of the features (or size of the lookup tables) is another key factor that makes spark an attractive option. Generally, there are two ways in which a model trained in Spark is implemented: 
 
+1. For batches, you can scheduled your scoring jobs with tools such as **Oozie**
+1. For real-time scenarios, you can easily import your Spark model into a **Spark Streaming** application that may be listening for new files to score
 
 <p align="middle">
+  <img src="../images/oozie-image.png" width="350" /> 
   <img src="../images/spark-streaming.png" width="250" /> 
 </p>
 <br clear="middle"/>
