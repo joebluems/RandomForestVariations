@@ -20,7 +20,7 @@ It may seem like building a Random Forest model in TensorFlow is a bit like over
 ### THE SET-UP
 <img align="right" src="../images/jupyter.png" width="200">
 
-Setup for this example is minimal. We use the pandas library which makes the data manipulation much easier and further reduces code. Below is a quick test to show if you have the right libraries. If python complains, use pip install <library>, or have your cluster admin do(or sudo) it for you. <br/>
+Setup for this example is minimal, as long as you have the right versions of Python and TensorFlow (see below for the versions I'm using). We use the pandas library which makes the data manipulation much easier and further reduces code. Below is a quick test to show if you have the right libraries. If python complains, use pip install <library>, or have your cluster admin do(or sudo) it for you. <br/>
 <br/>
 Isn't MapR a distributed file system? And don't you need special commands to interact with distributed file systems? It is but you don't, because MapR's file system is POSIX-compliant. You can run any program that work on Linux without modification!   
 <br/>
@@ -40,7 +40,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 ### THE RUN
-Open the jupyter notebook and play the cells. Selected output:
+Open the jupyter notebook and play the cells. Note: sometimes TensorfFlow is a little picky when you run in a notebook. Once the session is started, you may get an error if you try to re-run that code again. If it happens, restart the kernel and re-play the code up to that point. <br/>
+Selected output:
+
 ```
 Size of training:    6000
 Size of evaluation:  4000
