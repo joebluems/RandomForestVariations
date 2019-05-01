@@ -3,7 +3,7 @@
 
 **Apache Spark** is the powerhouse compute engine of distributed data platforms. If you've ever needed to move a lot of distributed data around a cluster (i.e. a legit big data workflow), it's likely you've come across Spark. There are lots of ways to interact with Spark and it seems like there are more in every new release. If you like to write compiled code, you have **scala** and **java** options, plus the scala command-line shell. There are also API's for python (i.e. **pyspark**) and **R**. You can also write Spark code in notebooks too. You'll find an example below. <br/>
 <br/>
-Another key selling point of Spark is the included libraries, including **Spark Streaming, MlLib, Spark SQL and GraphX**. You can test your code in local mode before deploying in yarn mode when you're working on a cluster, which makes this the first choice of most big data developers. 
+Another key selling point of Spark is the included libraries, including **Spark Streaming, MlLib, Spark SQL and GraphX**. You can test your code in local mode before deploying in yarn mode when you're working on a cluster, which makes this the first choice of most big data developers. Whenever a **task benefits from parallelization**, such as writing data or training independent decision trees, Spark should be first in line for consideration.
 <br clear="left"/>
 
 ### THE SCOOP
