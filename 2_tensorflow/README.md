@@ -71,13 +71,18 @@ Since we're using a notebook, we can use visualization tools. Here are a some gr
 Don't expect much performance if you use the synthetic data. An AUC of 0.5 = ML equivalent of a coin flip. Additionally, there is a folder created called **./checkpoints** that contains checkpoints for models written out every 10 epochs. This model can be used for deployment.
 
 ### THE WRAP-UP
-There are three basic flavors of deploying the model you just wrote out to the MapR file system:
+There are many options for deploying the model you just dumped to the MapR file system:
 1. For small to medium batches, simply **run it as a python script, possibly scheduled with crontab**.
-1. For real-time scenarios, download the **mapr_streams_python library, stream your features through a Producer, and then add the model in your Consumer**
+1. For real-time scenarios, download the **mapr-streams-python library, stream your features through a Producer, and then add the model in your Consumer**
 1. For meeting serious SLA's and heavy workloads, put the model into a **lightweight container, serve it with an API such as Flask, then orchestrate with Kubernetes** to meet demands of the workload.
+1. For deploying via browser, use **tensorflowjs_converter to convert the model from Keras to tensorflow.js** then serve the model. This is especially good for updating the model rapidly.
+1. There are options to train and **deploy TensorFlow models with Spark** (one is the tensorflowonspark package). These options are being developed rapidly and should soon be as viable as the other options. Spark models could be scheduled with Oozie or streamed for real-time scenarios. 
 
 <p align="middle">
-  <img src="../images/docker.png" width="150" /> 
-  <img src="../images/flask-logo.png" width="150" />
-  <img src="../images/kubernetes.png" width="150" />
+  <img src="../images/kafka.png" width="100" /> 
+  <img src="../images/docker.png" width="100" /> 
+  <img src="../images/kubernetes.png" width="100" />
+  <img src="../images/keras.png" width="100" />
+  <img src="../images/tfjs.png" width="100" />
+  <img src="../images/spark.png" width="100" />
 </p>
