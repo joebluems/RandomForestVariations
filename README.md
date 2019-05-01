@@ -47,5 +47,4 @@ git clone https://github.com/joebluems/RandomForestVariations.git
 cd RandomForestVariations
 ```
 <br/>
-PS - made it through the whole post without resorting to using the metaphor "seeing the forest for the trees..."!
-
+If you can run some of these examples, you may start to realize that when you're unrestrained by ML library choice your priorities will shift to deployment, and then you will begin to see the forest for the trees... 
