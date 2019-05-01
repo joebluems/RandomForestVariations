@@ -18,17 +18,40 @@ The python library **scikit-learn** is a dependable collection of tools that are
 <br clear="right"/>
 
 ```
-python 
+python
 Python 3.6.3 (default, Mar 20 2018, 13:50:41) 
 [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)] on linux
 Type "help", "copyright", "credits" or "license" for more information.
->>> import sklearn, pandas, joblib
->>> 
+>>> import tensorflow as tf
+>>> print(tf.__version__)
+1.13.1
+>>> import sklearn, pandas, numpy, matplotlib
+>>> ctrl-d
 ```
 
 ### THE RUN
+Open the jupyter notebook and play the cells. Selected output:
+```
+Size of training:    6000
+Size of evaluation:  4000
+
+First row of training predictors (numpy) array:
+[ 4.35532638  7.69822162  4.05488623 -0.05420009 -0.86838503  2.85506864
+  4.23377396 -0.38211895 -1.38040518  5.71197681  4.73818419 -0.99729902]
+
+Step 1, Loss: -1.000000, Acc: 0.750167
+Step 10, Loss: -21.000000, Acc: 0.750167
+Step 20, Loss: -21.000000, Acc: 0.750167
+Step 30, Loss: -21.000000, Acc: 0.750167
+Step 40, Loss: -21.000000, Acc: 0.750167
+Step 50, Loss: -21.000000, Acc: 0.750167
+
+Test Accuracy: 0.76425
+```
+Since we're using a notebook, we can use visualization tools. Here are a some graphs you might see:
 
 
-Don't expect much performance if you use the synthetic data. An AUC of 0.5 = ML equivalent of a coin flip. Additionally, there is a file created called **rfmodel.joblib** that is written using joblib. This model can be used for deployment.
+
+Don't expect much performance if you use the synthetic data. An AUC of 0.5 = ML equivalent of a coin flip. Additionally, there is a folder created called **./checkpoints** that contains checkpoints for models written out every 10 epochs. This model can be used for deployment.
 
 ### THE WRAP-UP
