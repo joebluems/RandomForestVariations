@@ -82,7 +82,7 @@ There are many options for deploying the model you just dumped to the MapR file 
   <img src="../images/kafka.png" width="100" /> 
   <img src="../images/docker.png" width="100" /> 
   <img src="../images/kubernetes.png" width="100" />
-  <img src="../images/keras.png" width="100" />
+  <img src="../images/keras.jpg" width="100" />
   <img src="../images/tfjs.png" width="100" />
   <img src="../images/spark.png" width="100" />
 </p>
