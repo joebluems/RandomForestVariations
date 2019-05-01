@@ -7,12 +7,15 @@ Some would say that TensorFlow is difficult to use. Keras is a high-level API th
 
 <br clear="left"/>
 
-<img align="middle" src="../images/tf_popular.png" width="450">
+<img align="middle" src="../images/tf_popular.png" width="550">
 
 <br clear="middle"/>
 
 ### THE SCOOP
-A model built with **scikit-learn is lightweight and portable**. This makes it a good candidate for being *deployed via API in a docker container*. If your scoring job is extrememly large or feature extraction is complex, this model alone won't help you, but you can achieve scaling with a tool like Kubernetes orchestrating those containers. On the training side, it's a **good choice for a quick-and-dirty model that gives you a good baseline without custom coding**. Why should you re-write the steps to calculate AUC when it's already done for you? You can always paste the code into a notebook if command-line interfaces aren't your thing. 
+It doesn't make a lot of sense to use TensorFlow to train a model if you can achieve the same results with a simpler package (e.g. scikit-learn). So when we evaluate TensorFlow, we look for a few things: the type of problem we're trying to solve requires a complex model (usually a deep network), the training , and we may want to deploy in a browser directly to the end-user (i.e. using the TensorFlow.js library).<br/>
+<br>
+It may seem like building a Random Forest model in TensorFlow is a bit like overkill. Once your model is in tensor form, you may find it unwieldy and difficult to extract things like metrics and interpretation. If your data is large and you have a GPU, it might make sense over other options. Deployment may be slightly more restrictive if you go with TensorFlow, so make sure the extra calories you must burn are worth it.
+
 
 ### THE SET-UP
 <img align="right" src="../images/jupyter.png" width="200">
