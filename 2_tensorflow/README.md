@@ -1,7 +1,9 @@
-## Random Forest with TensorFlow
+## Tensor Forest with TensorFlow
 <img align="left" src="../images/Tensorflow_logo.svg.png" width="150">
 
-The python library **scikit-learn** is a dependable collection of tools that are among the easiest and most user-friendly packages there are. It's built on numpy and scipy, so if you are comfortable with python, this will be one of your first stops. For those who are newer to machine-learning, there's a good chance that you learned how to build models with this package. This is also a really good choice to estimate the degree to which your problem can be solved or quick feature assessments. 
+**TensorFlow** (TF) is an open-source library that focuses on developing and training ML models. The **types of models that TF excels in have architectures based on neural networks**. Networks are developed by adding layers between the input and the output. Depending on the types of layers added, these networks can handle different types of problems, like a CNN (Convolutional Neural Network) for image classificaiton or RNN (Recurrent Neural Network) for forecasting a time series. 
+<br/>
+Some would say that TensorFlow is difficult to use. Keras is a high-level API that makes it easier to construct complex models by adding levels with less code. The tensors that give TensorFlow its name are mathematical entities that are very good for large, fast calculations. If you have **access to a GPU, TensorFlow is positioned to take advantage** of that. It is also a very popular package among data scientists - see figure below - so it appears that TensorFlow is worth investing some time to learn. 
 
 <br clear="left"/>
 
