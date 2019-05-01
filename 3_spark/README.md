@@ -1,15 +1,21 @@
 ## Random Forest with Spark, scala application and pyspark
-<img align="left" src="../images/spark.png" width="150">
+<img align="left" src="../images/spark.png" width="250">
 
+**Apache Spark** is the powerhouse compute engine of distributed data platforms. If you've ever needed to move a lot of distributed data around a cluster (i.e. a legit big data workflow), it's likely you've come across Spark. There are lots of ways to interact with Spark and it seems like there are more in every new release. If you like to write compiled code, you have **scala** and **java** options, plus the scala command-line shell. There are also API's for python (i.e. **pyspark**) and **R**. You can also write Spark code in notebooks too. You'll find an example below. <br/>
+<br/>
+Another key selling point of Spark is the included libraries, including **Spark Streaming, MlLib, Spark SQL and GraphX**. You can test your code in local mode before deploying in yarn mode when you're working on a cluster, which makes this the first choice of most big data developers. 
 <br clear="left"/>
 
 ### THE SCOOP
 <img align="right" src="../images/jupyter.png" width="100">
 
+A model developed with **Spark's ML Pipelines** is very portable within Spark workflows and that makes it the ideal choice for big-data modeling jobs, as well as a model that integrates readily into Spark Streaming workflows for real-time implementations. Spark is a good choice **when the training data is exceptionally large** (i.e. 100M's of rows) or the **features being extracted are especially onerous** (e.g. vectorizing text from 1M documents and vocab size of 2M+). These are the types of problems where other methods may fail and cause limitations to be imposed on the data scientist. <br/>
+<br/>
+Using **pyspark** with jupyter is **ideal for the data scientist who prefers python but has a big data problem** that is vexing their current environment. 
 <br clear="right"/>
 
 ### THE SET-UP
-There are two options for training the random forest presented here with Spark: pyspark with jupyter and submitting as a scala application. You could also use the spark-shell or another notebook. You could also invoke SparkR and run R code. 
+There are two options for building the random forest presented here with Spark: pyspark with jupyter and submitting as a scala application. You could also use the spark-shell or another notebook. You could also invoke SparkR and run R code. 
 #### pyspark
 To run the pyspark notebook, you'll need jupyter and a few libraries (have an admin install with pip or sudo it yourself). You'll also need to set your SPARK_HOME environment variable so python knows where to find it. Once that's ready, launch the notebook.
 ```
