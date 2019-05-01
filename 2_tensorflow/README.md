@@ -49,7 +49,11 @@ Step 50, Loss: -21.000000, Acc: 0.750167
 Test Accuracy: 0.76425
 ```
 Since we're using a notebook, we can use visualization tools. Here are a some graphs you might see:
-
+<p align="middle">
+  <img src="../images/histogram.png" width="250" /> 
+  <img src="../images/barchart.png" width="250" />
+</p>
+<br clear="middle"/>
 
 
 Don't expect much performance if you use the synthetic data. An AUC of 0.5 = ML equivalent of a coin flip. Additionally, there is a folder created called **./checkpoints** that contains checkpoints for models written out every 10 epochs. This model can be used for deployment.
