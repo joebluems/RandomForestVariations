@@ -4,6 +4,7 @@
 The python library **scikit-learn** is a dependable collection of tools that are among the easiest and most user-friendly packages there are. It's built on numpy and scipy, so if you are comfortable with python, this will be one of your first stops. For those who are newer to machine-learning, there's a good chance that you learned how to build models with this package. This is also a really good choice to estimate the degree to which your problem can be solved or quick feature assessments. 
 
 <br clear="left"/>
+
 <img align="middle" src="../images/tf_popular.png" width="450">
 
 <br clear="middle"/>
